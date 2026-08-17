@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360">
+  <rect width="360" height="360" rx="24" fill="#f7fbff"/>
+  <rect x="34" y="34" width="292" height="292" rx="16" fill="#ffffff" stroke="#1677ff" stroke-width="8"/>
+  <path d="M82 82h72v72H82zM206 82h72v72h-72zM82 206h72v72H82z" fill="#1677ff"/>
+  <path d="M196 196h34v34h-34zM244 196h34v82h-34zM196 244h34v34h-34z" fill="#1677ff"/>
+  <text x="180" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">支付宝</text>
+  <text x="180" y="318" text-anchor="middle" font-family="Arial" font-size="16" fill="#64748b">收款码占位图</text>
+</svg>
+

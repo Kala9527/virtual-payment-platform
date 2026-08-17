@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#111827"/>
+  <rect x="110" y="96" width="740" height="428" rx="26" fill="#1f2937"/>
+  <rect x="170" y="158" width="230" height="150" rx="20" fill="#f59e0b"/>
+  <rect x="440" y="158" width="350" height="42" rx="10" fill="#f9fafb"/>
+  <rect x="440" y="236" width="290" height="32" rx="9" fill="#9ca3af"/>
+  <rect x="170" y="348" width="620" height="82" rx="18" fill="#374151"/>
+  <text x="480" y="514" text-anchor="middle" font-family="Arial" font-size="34" fill="#ffffff">数字资源商品占位图</text>
+</svg>
+

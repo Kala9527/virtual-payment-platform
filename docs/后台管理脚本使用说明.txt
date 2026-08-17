@@ -1,0 +1,123 @@
+# 后台管理脚本使用说明
+
+本文档说明 `backend/scripts/admin.py` 的常用后台管理命令，可用于查看商品、修改商品销售状态、查询订单信息。
+
+## 运行位置
+
+先进入后端目录：
+
+```powershell
+cd D:\工作区文件夹\test_explore\virtual-payment-platform\backend
+```
+
+推荐使用项目后端启动脚本所绑定的 Conda 环境：
+
+```powershell
+D:\Miniconda3\envs\virtual_pay_platform_env\python.exe scripts\admin.py --help
+```
+
+如果当前终端已经激活了正确环境，也可以直接使用：
+
+```powershell
+python scripts\admin.py --help
+```
+
+## 商品状态说明
+
+商品字段 `sale_status` 为整数：
+
+| 值 | 状态 | 前台表现 |
+| --- | --- | --- |
+| `1` | 在售 | 可以选择并下单 |
+| `2` | 补货中 | 展示补货中，不能购买 |
+| `3` | 停止发售 | 展示停止发售，不能购买 |
+
+后端下单接口也会校验该状态，只有 `sale_status=1` 的商品可以创建订单。
+
+## 查看商品列表
+
+```powershell
+python scripts\admin.py list-products
+```
+
+输出包含商品 ID、商品名、价格、当前状态和通知邮箱。修改商品状态时需要使用商品 ID。
+
+## 修改商品状态
+
+命令格式：
+
+```powershell
+python scripts\admin.py set-product-status <商品ID> <状态值>
+```
+
+示例：
+
+```powershell
+python scripts\admin.py set-product-status 1 1
+python scripts\admin.py set-product-status 2 2
+python scripts\admin.py set-product-status 3 3
+```
+
+以上分别表示：
+
+- 商品 `1` 设置为在售
+- 商品 `2` 设置为补货中
+- 商品 `3` 设置为停止发售
+
+## 查看最近订单
+
+默认查看最近 20 条订单：
+
+```powershell
+python scripts\admin.py list-orders
+```
+
+指定数量：
+
+```powershell
+python scripts\admin.py list-orders --limit 50
+```
+
+输出包含订单号、商品、订单状态、支付方式、备注、下单时间和支付时间。
+
+## 查看指定订单详情
+
+命令格式：
+
+```powershell
+python scripts\admin.py show-order <订单号>
+```
+
+示例：
+
+```powershell
+python scripts\admin.py show-order VP20260813ED3114EE06
+```
+
+## 后端调试命令
+
+安装或确认测试依赖：
+
+```powershell
+D:\Miniconda3\envs\virtual_pay_platform_env\python.exe -m pip install pytest
+```
+
+运行后端测试：
+
+```powershell
+D:\Miniconda3\envs\virtual_pay_platform_env\python.exe -m pytest
+```
+
+通过启动脚本启动后端：
+
+```powershell
+cd D:\工作区文件夹\test_explore\virtual-payment-platform
+.\start-backend.bat 8006
+```
+
+启动后可检查健康接口：
+
+```powershell
+Invoke-RestMethod -Uri http://127.0.0.1:8006/health
+```
+

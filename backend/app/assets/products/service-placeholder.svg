@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#f8fafc"/>
+  <rect x="88" y="78" width="784" height="464" rx="30" fill="#ffffff" stroke="#dbeafe" stroke-width="4"/>
+  <rect x="148" y="150" width="260" height="320" rx="22" fill="#2563eb"/>
+  <rect x="452" y="150" width="360" height="54" rx="12" fill="#0f172a"/>
+  <rect x="452" y="244" width="270" height="36" rx="10" fill="#94a3b8"/>
+  <rect x="452" y="306" width="315" height="36" rx="10" fill="#cbd5e1"/>
+  <rect x="452" y="390" width="170" height="52" rx="14" fill="#14b8a6"/>
+  <text x="480" y="514" text-anchor="middle" font-family="Arial" font-size="34" fill="#0f172a">在线服务商品占位图</text>
+</svg>
+

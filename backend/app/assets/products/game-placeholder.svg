@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#0f172a"/>
+  <rect x="90" y="80" width="780" height="460" rx="28" fill="#16233a"/>
+  <circle cx="276" cy="310" r="94" fill="#2dd4bf"/>
+  <rect x="430" y="210" width="250" height="46" rx="12" fill="#ffffff"/>
+  <rect x="430" y="290" width="340" height="34" rx="10" fill="#94a3b8"/>
+  <rect x="430" y="352" width="300" height="34" rx="10" fill="#64748b"/>
+  <text x="480" y="514" text-anchor="middle" font-family="Arial" font-size="34" fill="#ffffff">数字游戏商品占位图</text>
+</svg>
+
